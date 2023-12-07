@@ -1,0 +1,18 @@
+inputSpec: './petstore.yaml'
+outputDir: './temp'
+generatorName: 'spring'
+additionalProperties:
+#  library: 'spring-boot'
+  useTags: true
+  serializableModel: true
+  dateLibrary: 'java8'
+  annotationLibrary: 'none'
+  documentationProvider: 'none'
+  requestMappingMode: 'api_interface'
+  performBeanValidation: true
+  useBeanValidation: true
+  delegatePattern: true
+  implicitHeaders: true
+  hideGenerationTimestamp: true
+  modelPackage: 'com.mna.container.app._4_domain.api.model'
+  apiPackage: 'com.mna.container.app._3_application'
