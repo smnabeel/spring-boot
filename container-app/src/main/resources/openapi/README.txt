@@ -29,3 +29,8 @@ Get-ChildItem 'C:\Users\munabeel\git\spring-boot\container-app\src\main\java\com
      (Get-Content $_ | ForEach  { $_ -replace 'package com.mna.container.app._3_application;', 'package com.mna.container.app._2_presentation;' }) |
      Set-Content $_
 }
+
+Get-ChildItem 'C:\Users\munabeel\git\spring-boot\container-app\src\main\java\com\mna\container\app\_3_application\*ApiController.java' -Recurse | ForEach {
+     (Get-Content $_ | ForEach  { $_ -replace '@Controller', '@RestController' }) |
+     Set-Content $_
+}

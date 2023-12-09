@@ -47,23 +47,8 @@
 			<groupId>org.openapitools</groupId>
 			<artifactId>openapi-generator-cli</artifactId>
 			<version>${openapitools.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>spring-jcl</groupId>
-					<artifactId>spring-jcl</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
