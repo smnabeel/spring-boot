@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.Objects;
 
 import javax.annotation.Generated;
-import javax.validation.Valid;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import jakarta.validation.Valid;
 
 /**
  * Customer

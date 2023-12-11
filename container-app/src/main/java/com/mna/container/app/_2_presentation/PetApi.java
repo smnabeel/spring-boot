@@ -8,7 +8,6 @@ package com.mna.container.app._2_presentation;
 import java.util.List;
 
 import javax.annotation.Generated;
-import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -22,6 +21,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.mna.container.app._3_application.PetApiDelegate;
 import com.mna.container.app._4_domain.api.model.ModelApiResponse;
 import com.mna.container.app._4_domain.api.model.Pet;
+
+import jakarta.validation.Valid;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
 @Validated

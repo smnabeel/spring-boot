@@ -3,7 +3,7 @@ package com.mna.container.app._3_application.impl;
 import java.util.List;
 import java.util.Optional;
 
-import org.apache.http.HttpStatus;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.NativeWebRequest;
@@ -49,7 +49,7 @@ public class PetApiDelegateImpl implements PetApiDelegate {
 	public ResponseEntity<Pet> getPetById(Long petId) {
 		System.out.println("Inside...");
 		Pet pet = new Pet();
-		return new ResponseEntity<Pet>(pet, HttpStatusCode.valueOf(HttpStatus.SC_OK));
+		return new ResponseEntity<Pet>(pet, HttpStatusCode.valueOf(HttpStatus.OK.value()));
 	}
 
 	@Override

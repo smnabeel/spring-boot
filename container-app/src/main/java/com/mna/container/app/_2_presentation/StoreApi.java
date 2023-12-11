@@ -8,7 +8,6 @@ package com.mna.container.app._2_presentation;
 import java.util.Map;
 
 import javax.annotation.Generated;
-import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -19,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.mna.container.app._3_application.StoreApiDelegate;
 import com.mna.container.app._4_domain.api.model.Order;
+
+import jakarta.validation.Valid;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
 @Validated

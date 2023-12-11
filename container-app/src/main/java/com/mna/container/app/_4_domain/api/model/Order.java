@@ -5,13 +5,14 @@ import java.time.OffsetDateTime;
 import java.util.Objects;
 
 import javax.annotation.Generated;
-import javax.validation.Valid;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
+
+import jakarta.validation.Valid;
 
 /**
  * Order

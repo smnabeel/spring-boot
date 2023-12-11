@@ -20,17 +20,32 @@
 
 	<properties>
 		<java.version>21</java.version>
-		<openapitools.version>7.1.0</openapitools.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+		<!-- Log4j2 START -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+		<!-- Log4j2 END -->
+
 		<dependency>
 			<groupId>javax.annotation</groupId>
 			<artifactId>javax.annotation-api</artifactId>
@@ -44,10 +59,16 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!--<dependency>
 			<groupId>org.openapitools</groupId>
 			<artifactId>openapi-generator-cli</artifactId>
-			<version>${openapitools.version}</version>
-		</dependency>
+			<version>7.1.0</version>
+		</dependency>-->
 
 	</dependencies>
 
