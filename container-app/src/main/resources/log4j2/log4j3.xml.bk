@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+
+	<Appenders>
+		<Console name="stdout" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>
+					"%d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}"
+				</pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<Logger name="com.mna.container.app" level="INFO" additivity="true" includeLocation="true">
+			<appender-ref ref="stdout" />
+		</Logger>
+	</Loggers>
+</Configuration>
