@@ -2,7 +2,7 @@
 <Configuration status="WARN" monitorInterval="30">
 	<Properties>
 		<Property name="LOG_PATTERN">
-			%d{yyyy-MM-dd HH:mm:ss.SSS} %clr{[%p]}{yellow} %clr{[%tid]}{magenta} --- [%c{10}] %clr{[%M]}{green} %clr{%m}{blue} %n %clr{%throwable{10}}{red}
+			%d{yyyy-MM-dd HH:mm:ss.SSS} %clr{[%p]}{magenta} [%tid] --- [%c{10}] %clr{[%M]}{green} %clr{%m}{blue} %clr{%throwable{10} %n}{red}
 		</Property>
 	</Properties>
 

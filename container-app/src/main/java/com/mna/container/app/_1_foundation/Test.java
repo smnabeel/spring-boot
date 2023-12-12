@@ -14,6 +14,11 @@ public class Test {
 	
 	@GetMapping("/hello")
 	ResponseEntity<String> hello() {
+		try {
+			throw new Exception("Testing Exception");
+		} catch (Exception e) {
+			log.error(e.getMessage(), e);
+		}
 		log.info("Hi there...");
 	    return new ResponseEntity<>("Hello World!", HttpStatus.OK);
 	}
